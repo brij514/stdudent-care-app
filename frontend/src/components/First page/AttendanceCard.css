@@ -1,0 +1,40 @@
+.attendance-card {
+  border-radius: 8px;
+  padding: 19px;
+  margin: 29px;
+  width: 260px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  background-color: #dfdbdb;
+  display: flex;
+  justify-content: space-between;
+}
+
+.attendance-card__subject {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.attendance-card__class-attended,
+.attendance-card__percentage {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.icons{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  top: -4px;
+}
+
+.edit-icon {
+  cursor: pointer;
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+.delete-icon {
+  cursor: pointer;
+
+  font-size: 21px;
+}

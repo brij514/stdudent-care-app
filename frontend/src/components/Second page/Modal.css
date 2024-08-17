@@ -1,0 +1,71 @@
+/* src/components/Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content  {
+  
+  border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center  y;
+ 
+  background-color: #d3cdcd;
+}
+ 
+.modal-content h2 {
+  color: #372e2e;
+  display: flex;
+  justify-content: center;
+}
+.modal-content form{
+  top: 309.5px;
+   height: 70vh;
+ 
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #777474;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.test-marks{
+  display: flex;
+  gap: 10px;
+}
+.btn {
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.cancel {
+  background: #ccc;
+}
+
+.btn.submit {
+  background: #007bff;
+  color: white;
+}

@@ -1,0 +1,33 @@
+.main_first {
+   display: flex;
+   flex-direction: column;
+   top: 0;
+   min-height: 100vh;
+   background-color: rgb(209, 187, 158);
+}
+.header-first {
+  font-size: 29px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-family: "Architects Daughter", cursive;
+  color: hsl(198, 1%, 29%);
+}
+.loading-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.attendence_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+     
+     margin: 0 auto;
+     
+     
+    
+    flex-wrap: wrap;
+}

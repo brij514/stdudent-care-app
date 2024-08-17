@@ -1,0 +1,26 @@
+.add-card {
+    
+    border-radius: 8px;
+    padding: 19px;
+    margin: 29px;
+     width: 250px;
+     height: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    background-color: #dfdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+   
+   
+  }
+
+   
+  
+  .add-icon {
+    cursor: pointer;
+  }
+  
+  
+  

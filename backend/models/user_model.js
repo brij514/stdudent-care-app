@@ -1,0 +1,14 @@
+import mongoose from "mongoose";
+import uniqueValidator from "mongoose-unique-validator";
+
+const Schema = mongoose.Schema;
+
+const userSchema = new Schema({
+   
+  email: { type: String, required: true, unique: true }, //unique adds only index in database.
+  password: { type: String, required: true },
+});
+
+userSchema.plugin(uniqueValidator);
+const User = mongoose.model("User", userSchema);
+export default User;

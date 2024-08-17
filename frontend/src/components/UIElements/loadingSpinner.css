@@ -1,0 +1,13 @@
+.loading-container {
+  height: auto;
+}
+
+.loading-icon {
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+  
+  height: 93vh;
+  background-color: bisque;
+  width:100vw ;
+}
