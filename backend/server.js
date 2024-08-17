@@ -7,9 +7,9 @@ import attendanceRoutes from "./routes/attendance_routes.js";
 import marksRoutes from "./routes/marks_routes.js";
 import notesRoutes from "./routes/notes_routes.js";
 import connectToMongoDB from "./db/connectToMongoDB.js";
-
+import path from "path";
 const app = express();
-
+const __dirname = path.resolve();
 const PORT = process.env.PORT || 5000;
 
 dotenv.config();
@@ -24,6 +24,11 @@ app.use("/api/notes", notesRoutes);
 // app.get("/", (req, res) => {
 //   res.send("Hello world");
 // });
+app.use(express.static(path.join(__dirname, "/frontend/dist")));
+app.get('*', (req,res)=>{
+  res.sendFile(path.join(__dirname,'frontend','dist','index.html'));
+})
+
 
 app.listen(PORT, () => {
   connectToMongoDB();
